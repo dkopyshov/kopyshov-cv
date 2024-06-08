@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    position: fixed;
+    top: 0;
+}
+
+.navigator {
+    list-style-type: none;
+}
+
+.navigator li {
+    display: inline-block;
+}

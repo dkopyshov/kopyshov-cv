@@ -1,8 +1,32 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+    /*background: #1e1e1e;*/
+    background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 25%);
 }
 
 header {
+    padding: 40px 0 30px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -12,10 +36,32 @@ header {
     top: 0;
 }
 
+.logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 34px;
+    font-weight: 600;
+    color: #fff;
+}
+
 .navigator {
     list-style-type: none;
+
+    font-size: 26px;
 }
 
 .navigator li {
     display: inline-block;
+}
+
+.navigator li a {
+    color: #e5e5e5;
+    margin-right: 2.5rem;
+}
+
+.navigator li a:hover {
+    color: #e5e5e5;
+    margin-right: 2.5rem;
 }

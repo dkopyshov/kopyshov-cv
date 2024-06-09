@@ -6,30 +6,33 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="/css/main.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
 	<title>Dmitry Kopyshov</title>
 </head>
 
 <body>
-	<header>
+	<header id="menu">
 		<div class="header-1">
 		<div class="logo">
 			<p>ДМИТРИЙ КОПЫШОВ</p>
 		</div>
 		<nav>
-			<ul class="navigator">
-				<li><a href="#about">О СЕБЕ</a></li>
-				<li><a href="#skills">НАВЫКИ</a></li>
-				<li><a href="#portfolio">PORTFOLIO</a></li>
-				<li><a href="#contacts">КОНТАКТЫ</a></li>
+			<ul class="navigator" id="nav">
+				<li data-menuanchor="home" class="active"><a href="#home">ДОМОЙ</a></li>
+				<li data-menuanchor="about"><a href="#about">О СЕБЕ</a></li>
+				<li data-menuanchor="skills"><a href="#skills">НАВЫКИ</a></li>
+				<li data-menuanchor="portfolio"><a href="#portfolio">PORTFOLIO</a></li>
+				<li data-menuanchor="contacts"><a href="#contacts">КОНТАКТЫ</a></li>
 			</ul>
 		</nav>
 		</div>
 	</header>
 
 	<main id="pagepiling">
-		<section class="main-section, section">
+		<section data-menuanchor="main-section" class="main-section, section" id="home">
 			<div class="container">
 				<div class="hero-pic">
 					<img src="assets/img/photo-round.png" alt="profile">
@@ -37,17 +40,17 @@
 				<div class="home-content">
 					<h5>Добрый привет! Я Java&nbsp<span class="input">Programmer</span></h5>
 					<h1>Копышов Дмитрий</h1>
-					<p>Я Java-программист с опытом более 1 года. Обладаю навыками в создании и проектировании Web-приложений,
-						Backend-разработке, непрерывной интеграции и развертывания ПО (CI/CD) в процессе разработки и многое другое...</p>
+					<p>Я Java-программист с опытом более 1 года. Обладаю навыками в создании и проектировании <span class="input">Web</span>-приложений,
+						<span class="input">Backend</span>-разработке, непрерывной интеграции и развертывания ПО (<span class="input">CI/CD</span>) в процессе разработки и многое другое...</p>
 
 					<div class="home-sci">
-						<a href="#"><i class="fa-brands fa-vk"></i></a>
-						<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-						<a href="#"><i class="fa-brands fa-telegram"></i></a>
-						<a href="#"><i class="fa-brands fa-github"></i></a>
+<!--						<a href="#"><i class="fa-brands fa-vk"></i></a>-->
+						<a href="https://linkedin.com/in/dmitrykopyshov"><i class="fa-brands fa-linkedin"></i></a>
+						<a href="https://t.me/ko_dmeet"><i class="fa-brands fa-telegram"></i></a>
+						<a href="https://github.com/dkopyshov"><i class="fa-brands fa-github"></i></a>
 
 						<div class="btn-group">
-							<a href="#" class="btn-box">Download CV</a>
+							<a href="/assets/resources/DMITRY_KOPYSHOV_java_ru.pdf" class="btn-box" download="/assets/resources/DMITRY_KOPYSHOV_java_ru.pdf">Download CV</a>
 						</div>
 					</div>
 				</div>
@@ -93,7 +96,12 @@
 	</footer>
 	<script>
 		$(document).ready(function() {
-			$('#pagepiling').pagepiling();
+			$('#pagepiling').pagepiling({
+				anchors: ['home', 'about', 'skills', 'portfolio', 'contacts'],
+				menu: 'menu',
+				scrollingSpeed: 700,
+				loopBottom: true
+			});
 		});
 	</script>
 </body>

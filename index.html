@@ -4,7 +4,10 @@
 <head>
 	<meta http-equiv="content-type" content="text/html" charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="/css/main.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
 	<title>Dmitry Kopyshov</title>
 </head>
 
@@ -25,8 +28,8 @@
 		</div>
 	</header>
 
-	<main>
-		<section class="main-section">
+	<main id="pagepiling">
+		<section class="main-section, section">
 			<div class="container">
 				<div class="hero-pic">
 					<img src="assets/img/photo-round.png" alt="profile">
@@ -51,7 +54,7 @@
 			</div>
 		</section>
 
-		<section id="about">
+		<section class="section" id="about">
 			<p class="section-p1">Get to Know More</p>
 			<h1 class="sub-title">About <span>Me</span></h1>
 
@@ -81,13 +84,17 @@
 				</div>
 			</div>
 		</section>
-		<section id="skills"></section>
-		<section id="portfolio"></section>
+		<section class="section" id="skills"></section>
+		<section class="section" id="portfolio"></section>
 	</main>
 
 	<footer	id="contacts">
 
 	</footer>
-	<script src="js/script.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#pagepiling').pagepiling();
+		});
+	</script>
 </body>
 </html>

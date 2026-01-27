@@ -371,6 +371,119 @@ article .icon {
     position: relative;
 }
 
+.section-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px 80px;
+}
+
+.section-title {
+    color: #fff;
+    font-size: 44px;
+    margin-bottom: 16px;
+}
+
+.section-lead {
+    color: #b6c2d2;
+    font-size: 18px;
+    max-width: 720px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.skills-grid,
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.skill-card,
+.project-card {
+    background: rgba(6, 20, 44, 0.9);
+    border-radius: 20px;
+    padding: 24px;
+    border: 1px solid rgba(0, 238, 255, 0.2);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+    color: #e5e5e5;
+}
+
+.skill-card i,
+.project-card i {
+    font-size: 28px;
+    color: #0ef;
+    margin-bottom: 16px;
+    display: inline-flex;
+}
+
+.skill-card h3,
+.project-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #fff;
+}
+
+.skill-card ul,
+.project-card ul {
+    padding-left: 18px;
+    line-height: 1.6;
+    color: #b6c2d2;
+}
+
+.project-card p {
+    margin-bottom: 16px;
+    color: #d5e3f5;
+    line-height: 1.6;
+}
+
+.project-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    background: rgba(0, 238, 255, 0.15);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+footer {
+    background: #050f22;
+}
+
+.footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-contacts a {
+    color: #e5e5e5;
+    font-size: 18px;
+    display: inline-flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.footer-contacts a i {
+    color: #0ef;
+}
+
 .color-container {
     border-color: rgb(163, 163, 163);
     background-color: rgb(177, 228, 231);

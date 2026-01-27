@@ -82,12 +82,110 @@
 				</div>
 			</div>
 		</section>
-		<section data-menuanchor="skills-section" class="section" id="skills"></section>
-		<section class="section" id="portfolio"></section>
+		<section data-menuanchor="skills-section" class="section" id="skills">
+			<div class="section-inner">
+				<h2 class="section-title">Ключевые навыки</h2>
+				<p class="section-lead">Сфокусирован на backend-разработке, качестве кода и надежной работе сервисов в продакшене.</p>
+				<div class="skills-grid">
+					<div class="skill-card">
+						<i class="fa-solid fa-code"></i>
+						<h3>Backend-разработка</h3>
+						<ul>
+							<li>Java 11/17, Spring Boot, Spring MVC</li>
+							<li>REST API, валидация, документация (OpenAPI)</li>
+							<li>Безопасность: JWT, Spring Security</li>
+						</ul>
+					</div>
+					<div class="skill-card">
+						<i class="fa-solid fa-database"></i>
+						<h3>Данные и интеграции</h3>
+						<ul>
+							<li>PostgreSQL, Redis, Flyway</li>
+							<li>Hibernate/JPA, оптимизация запросов</li>
+							<li>Интеграции через WebClient/RestTemplate</li>
+						</ul>
+					</div>
+					<div class="skill-card">
+						<i class="fa-solid fa-screwdriver-wrench"></i>
+						<h3>Инструменты и DevOps</h3>
+						<ul>
+							<li>Docker, Docker Compose</li>
+							<li>CI/CD: GitHub Actions, GitLab CI</li>
+							<li>Мониторинг: Prometheus, Grafana</li>
+						</ul>
+					</div>
+					<div class="skill-card">
+						<i class="fa-solid fa-bug"></i>
+						<h3>Качество и командная работа</h3>
+						<ul>
+							<li>JUnit 5, Mockito, Testcontainers</li>
+							<li>Code review, Clean Code, SOLID</li>
+							<li>Scrum, постановка задач, тайм-менеджмент</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section" id="portfolio">
+			<div class="section-inner">
+				<h2 class="section-title">Проекты и достижения</h2>
+				<p class="section-lead">Примеры работ, где я отвечал за архитектуру, качество и стабильность сервисов.</p>
+				<div class="projects-grid">
+					<article class="project-card">
+						<div class="project-icon">
+							<i class="fa-solid fa-diagram-project"></i>
+						</div>
+						<h3>Сервис мониторинга заявок</h3>
+						<p>Автоматизировал сбор и обработку данных, сократив ручную работу команды на 40%.</p>
+						<ul>
+							<li>Spring Boot, PostgreSQL, Redis</li>
+							<li>Очереди событий и планировщики</li>
+						</ul>
+					</article>
+					<article class="project-card">
+						<div class="project-icon">
+							<i class="fa-solid fa-chart-line"></i>
+						</div>
+						<h3>Витрина аналитики</h3>
+						<p>Создал API для отчетов и визуализаций, повысив скорость принятия решений менеджментом.</p>
+						<ul>
+							<li>REST API, OpenAPI</li>
+							<li>Оптимизация SQL-запросов</li>
+						</ul>
+					</article>
+					<article class="project-card">
+						<div class="project-icon">
+							<i class="fa-solid fa-shield-halved"></i>
+						</div>
+						<h3>Модуль авторизации</h3>
+						<p>Внедрил безопасную авторизацию и разграничение ролей для внутренних сервисов.</p>
+						<ul>
+							<li>JWT, Spring Security</li>
+							<li>Логирование и аудит действий</li>
+						</ul>
+					</article>
+				</div>
+				<div class="project-actions">
+					<a class="btn-box" href="https://github.com/dkopyshov" target="_blank" rel="noopener">Смотреть GitHub</a>
+					<a class="btn-box" href="assets/resources/DMITRY_KOPYSHOV_java_ru.pdf" download="assets/resources/DMITRY_KOPYSHOV_java_ru.pdf">Скачать резюме</a>
+				</div>
+			</div>
+		</section>
 	</main>
 
 	<footer	id="contacts">
-
+		<div class="section-inner footer-grid">
+			<div>
+				<h2 class="section-title">Контакты</h2>
+				<p class="section-lead">Открыт к предложениям и обсуждению новых проектов.</p>
+			</div>
+			<div class="footer-contacts">
+				<a href="mailto:dmitry.kopyshov@gmail.com"><i class="fa-solid fa-envelope"></i> dmitry.kopyshov@gmail.com</a>
+				<a href="tel:+79991234567"><i class="fa-solid fa-phone"></i> +7&nbsp;(999)&nbsp;123-45-67</a>
+				<a href="https://t.me/ko_dmeet" target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i> Telegram</a>
+				<a href="https://linkedin.com/in/dmitrykopyshov" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+			</div>
+		</div>
 	</footer>
 	<script>
 		$(document).ready(function() {

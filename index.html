@@ -4,12 +4,9 @@
 <head>
 	<meta http-equiv="content-type" content="text/html" charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
 	<link rel="stylesheet" type="text/css" media="all" href="css/main.css">
 	<link rel="stylesheet" type="text/css"  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" >
 	<link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery.pagepiling.min.js"></script>
 	<title>Dmitry Kopyshov</title>
 </head>
 
@@ -31,7 +28,7 @@
 		</div>
 	</header>
 
-	<main id="pagepiling">
+	<main>
 		<section data-menuanchor="main-section" class="section" id="home">
 			<div class="container">
 				<div class="hero-pic">
@@ -187,15 +184,5 @@
 			</div>
 		</div>
 	</footer>
-	<script>
-		$(document).ready(function() {
-			$('#pagepiling').pagepiling({
-				anchors: ['home', 'about', 'skills', 'portfolio', 'contacts'],
-				menu: 'menu',
-				scrollingSpeed: 700,
-				loopBottom: true
-			});
-		});
-	</script>
 </body>
 </html>

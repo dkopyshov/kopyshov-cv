@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Резюме Дмитрия Копышова — Java разработчика.">
+	<meta name="description" content="Дмитрий Копышов — Java Backend Developer. Java 17/21, Spring Boot, Kafka, REST API, PostgreSQL.">
 	<link rel="stylesheet" href="css/resume.css">
-	<title>Дмитрий Копышов — Java Developer</title>
+	<title>Дмитрий Копышов — Java Backend Developer</title>
 </head>
 <body>
 	<header class="site-header">
@@ -26,11 +26,12 @@
 		<section class="hero" aria-labelledby="hero-title">
 			<div class="shell hero-grid">
 				<div class="hero-copy">
-					<p class="eyebrow">Java Developer</p>
+					<p class="eyebrow">Java Backend Developer</p>
 					<h1 id="hero-title">Дмитрий Копышов</h1>
 					<p class="hero-summary">
-						Я Java-программист с опытом более 1 года. Обладаю навыками в создании и проектировании
-						Web-приложений, backend-разработке, непрерывной интеграции и развертывании ПО (CI/CD).
+						Java-разработчик с коммерческим опытом разработки production-систем и backend-компонентов.
+						Основной стек: Java 17/21, Spring Boot, Spring MVC, Spring Security, Spring Data,
+						Apache Kafka, REST API, SQL и PostgreSQL.
 					</p>
 
 					<div class="hero-actions">
@@ -68,13 +69,14 @@
 				</div>
 				<div class="section-content prose">
 					<p>
-						На прошлом месте работы возникло желание использовать программирование для решения рутинных задач
-						(автоматизировать сбор и предварительную аналитику информации). В процессе изучения Java обнаружил,
-						что программирование захватывает мое внимание и вдохновляет меня новыми возможностями.
+						Фокусируюсь на Java backend-разработке: проектировании API и сервисных границ,
+						работе с данными, security, интеграциях и асинхронном взаимодействии компонентов.
+						Основное направление — Spring ecosystem и event-driven architecture.
 					</p>
 					<p>
-						Этот опыт привел меня к решению сменить профессию и развиваться в направлении Java Backend Programmer.
-						Кроме того, изучаю и другие языки программирования.
+						В коммерческой разработке работаю над production ПО наземной станции управления БПЛА.
+						Также в составе команды участвую в разработке Foxx — клиент-серверной продуктовой платформы,
+						где занимаюсь server-side архитектурой, networking, identity/security и backend-интеграциями.
 					</p>
 				</div>
 			</div>
@@ -89,12 +91,27 @@
 				<div class="section-content">
 					<article class="resume-entry">
 						<div class="entry-heading">
-							<h3>Java Программист</h3>
-							<p class="entry-meta">1+ год опыта</p>
+							<h3>Java Developer · Ground Control Station</h3>
+							<p class="entry-meta">Коммерческая разработка</p>
 						</div>
 						<p>
-							Коммерческая разработка на Java. Детализированное описание опыта будет актуализировано
-							в отдельном content-срезе.
+							Разработка и сопровождение production Java-приложения для управления БПЛА:
+							application/domain logic, reactive pipelines, persistence и интеграции с системными
+							и сетевыми компонентами. Java 17, Micronaut, Reactor, H2, Flyway,
+							Micronaut Data, Netty, DBus, Linux/Yocto; desktop UI реализован на JavaFX.
+						</p>
+					</article>
+
+					<article class="resume-entry">
+						<div class="entry-heading">
+							<h3>Java Backend Developer · Foxx Platform</h3>
+							<p class="entry-meta">Командная продуктовая разработка</p>
+						</div>
+						<p>
+							В составе команды разрабатываю server-authoritative клиент-серверную платформу.
+							Работаю над Java 21 / Spring backend, REST API, PostgreSQL и Kafka-based event-driven
+							взаимодействием, а также проектированием authentication/authorization, session management,
+							persistent state, protocol boundaries и backend для web/admin компонентов.
 						</p>
 					</article>
 				</div>
@@ -109,19 +126,23 @@
 				</div>
 				<div class="section-content technology-grid">
 					<div class="technology-group">
-						<h3>Backend</h3>
-						<p>Java 11/17 · Spring Boot · Spring MVC · REST API · OpenAPI · JWT · Spring Security</p>
+						<h3>Java &amp; Spring</h3>
+						<p>Java 17/21 · Spring Boot · Spring MVC · Spring Security · Spring Data · REST API · OpenAPI</p>
 					</div>
 					<div class="technology-group">
-						<h3>Данные и интеграции</h3>
-						<p>PostgreSQL · Redis · Flyway · Hibernate/JPA · WebClient · RestTemplate</p>
+						<h3>Messaging &amp; Integration</h3>
+						<p>Apache Kafka · Event-driven architecture · WebClient · HTTP/REST · Netty · DBus</p>
 					</div>
 					<div class="technology-group">
-						<h3>Инфраструктура</h3>
-						<p>Docker · Docker Compose · GitHub Actions · GitLab CI · Prometheus · Grafana</p>
+						<h3>Data</h3>
+						<p>PostgreSQL · SQL · Hibernate/JPA · Flyway · H2 · Redis · Micronaut Data</p>
 					</div>
 					<div class="technology-group">
-						<h3>Качество</h3>
+						<h3>Platform &amp; Infrastructure</h3>
+						<p>Micronaut · Reactor · JavaFX · Docker · Linux/Yocto · Maven · Gradle · GitHub Actions · GitLab CI</p>
+					</div>
+					<div class="technology-group">
+						<h3>Testing &amp; Quality</h3>
 						<p>JUnit 5 · Mockito · Testcontainers · Code Review · Clean Code · SOLID</p>
 					</div>
 				</div>
@@ -135,15 +156,18 @@
 					<h2>Проекты</h2>
 				</div>
 				<div class="section-content">
-					<p class="muted">
-						Избранные реальные проекты будут добавлены после актуализации их описаний.
-					</p>
-					<a class="text-link"
-					   href="https://github.com/dkopyshov"
-					   target="_blank"
-					   rel="noopener">
-						Открыть GitHub →
-					</a>
+					<article class="resume-entry">
+						<div class="entry-heading">
+							<h3>Foxx Platform</h3>
+							<p class="entry-meta">Java 21 · Spring Boot · Kafka · Distributed Systems</p>
+						</div>
+						<p>
+							Командная разработка persistent MMORPG platform с отдельными server/client contracts,
+							authentication и authorization, session lifecycle, transactional persistence,
+							networking и event-driven взаимодействием. Экосистема включает серверную платформу,
+							отдельный игровой сервер и собственный клиент.
+						</p>
+					</article>
 				</div>
 			</div>
 		</section>

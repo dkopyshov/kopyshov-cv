@@ -1,186 +1,179 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 <head>
-	<meta http-equiv="content-type" content="text/html" charset="UTF-8">
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" media="all" href="css/main.css">
-	<link rel="stylesheet" type="text/css"  href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" >
-	<link rel="stylesheet" type="text/css" media="all" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-	<title>Dmitry Kopyshov</title>
+	<meta name="description" content="Резюме Дмитрия Копышова — Java разработчика.">
+	<link rel="stylesheet" href="css/resume.css">
+	<title>Дмитрий Копышов — Java Developer</title>
 </head>
-
 <body>
-	<header id="menu">
-		<div class="header-1">
-			<div class="logo">
-				<p>ДМИТРИЙ КОПЫШОВ</p>
-			</div>
-			<nav>
-				<ul class="navigator" id="nav">
-					<li data-menuanchor="home" class="active"><a href="#home">ДОМОЙ</a></li>
-					<li data-menuanchor="about"><a href="#about">О СЕБЕ</a></li>
-					<li data-menuanchor="skills"><a href="#skills">НАВЫКИ</a></li>
-					<li data-menuanchor="portfolio"><a href="#portfolio">PORTFOLIO</a></li>
-					<li data-menuanchor="contacts"><a href="#contacts">КОНТАКТЫ</a></li>
-				</ul>
+	<header class="site-header">
+		<div class="shell header-content">
+			<a class="brand" href="#top">Дмитрий Копышов</a>
+			<nav class="site-nav" aria-label="Основная навигация">
+				<a href="#about">Обо мне</a>
+				<a href="#experience">Опыт</a>
+				<a href="#technologies">Технологии</a>
+				<a href="#projects">Проекты</a>
+				<a href="#education">Образование</a>
+				<a href="#contacts">Контакты</a>
 			</nav>
 		</div>
 	</header>
 
-	<main>
-		<section data-menuanchor="main-section" class="section" id="home">
-			<div class="container">
-				<div class="hero-pic">
-					<img src="assets/img/photo-round.png" alt="profile">
-				</div>
-				<div class="home-content">
-					<h5>Добрый привет! Я Java&nbsp<span class="input">Programmer</span></h5>
-					<h1>Копышов Дмитрий</h1>
-					<p>Я Java-программист с опытом более 1 года. Обладаю навыками в создании и проектировании <span>Web</span>-приложений,
-						<span>Backend</span>-разработке, непрерывной интеграции и развертывания ПО (<span>CI/CD</span>) в процессе разработки и многое другое...</p>
+	<main id="top">
+		<section class="hero" aria-labelledby="hero-title">
+			<div class="shell hero-grid">
+				<div class="hero-copy">
+					<p class="eyebrow">Java Developer</p>
+					<h1 id="hero-title">Дмитрий Копышов</h1>
+					<p class="hero-summary">
+						Я Java-программист с опытом более 1 года. Обладаю навыками в создании и проектировании
+						Web-приложений, backend-разработке, непрерывной интеграции и развертывании ПО (CI/CD).
+					</p>
 
-					<div class="home-sci">
-						<a href="https://linkedin.com/in/dmitrykopyshov"><i class="fa-brands fa-linkedin"></i></a>
-						<a href="https://t.me/ko_dmeet"><i class="fa-brands fa-telegram"></i></a>
-						<a href="https://github.com/dkopyshov"><i class="fa-brands fa-github"></i></a>
-
-						<div class="btn-group">
-							<a href="assets/resources/DMITRY_KOPYSHOV_java_ru.pdf" class="btn-box" download="assets/resources/DMITRY_KOPYSHOV_java_ru.pdf">Download CV</a>
-						</div>
+					<div class="hero-actions">
+						<a class="button button-primary"
+						   href="assets/resources/DMITRY_KOPYSHOV_java_ru.pdf"
+						   download>
+							Скачать CV
+						</a>
+						<a class="button button-secondary"
+						   href="https://github.com/dkopyshov"
+						   target="_blank"
+						   rel="noopener">
+							GitHub
+						</a>
 					</div>
+
+					<div class="hero-links" aria-label="Контакты">
+						<a href="mailto:dmitry.kopyshov@gmail.com">Email</a>
+						<a href="https://t.me/ko_dmeet" target="_blank" rel="noopener">Telegram</a>
+						<a href="https://linkedin.com/in/dmitrykopyshov" target="_blank" rel="noopener">LinkedIn</a>
+					</div>
+				</div>
+
+				<img class="profile-photo"
+					 src="assets/img/photo-round.png"
+					 alt="Дмитрий Копышов">
+			</div>
+		</section>
+
+		<section class="section" id="about">
+			<div class="shell section-layout">
+				<div class="section-heading">
+					<p class="section-kicker">Профиль</p>
+					<h2>Обо мне</h2>
+				</div>
+				<div class="section-content prose">
+					<p>
+						На прошлом месте работы возникло желание использовать программирование для решения рутинных задач
+						(автоматизировать сбор и предварительную аналитику информации). В процессе изучения Java обнаружил,
+						что программирование захватывает мое внимание и вдохновляет меня новыми возможностями.
+					</p>
+					<p>
+						Этот опыт привел меня к решению сменить профессию и развиваться в направлении Java Backend Programmer.
+						Кроме того, изучаю и другие языки программирования.
+					</p>
 				</div>
 			</div>
 		</section>
 
-		<section data-menuanchor="about-section" class="section" id="about">
-			<div class="section-container">
-				<div class="section_pic-container">
-					<img src="assets/img/photo.png" alt="profile" class="about-pic"/>
+		<section class="section" id="experience">
+			<div class="shell section-layout">
+				<div class="section-heading">
+					<p class="section-kicker">Карьера</p>
+					<h2>Опыт</h2>
 				</div>
-				<div class="about-details-container">
-					<div class="about-containers">
-						<div class="details-container">
-							<img src="assets/icons/experience.png" alt="experience icon" class="icon">
-							<h3>Опыт</h3>
-							<p>1+ год<br> Java Программист</p>
+				<div class="section-content">
+					<article class="resume-entry">
+						<div class="entry-heading">
+							<h3>Java Программист</h3>
+							<p class="entry-meta">1+ год опыта</p>
 						</div>
-						<div class="details-container">
-							<img src="assets/icons/education.png" alt="education icon" class="icon">
-							<h3>Образование</h3>
-							<p>Российская Академия Народного Хозяйства и Государственной Службы</p>
-						</div>
-					</div>
-					<div class="about-text">
-						<p>На прошлом месте работы возникло желание использовать программирование для решения рутинных задач (автоматизировать сбор и предварительную аналитику информации). В процессе изучения Java обнаружил, что программирование захватывает мое внимание и вдохновляет меня новыми возможностями. Процесс изучения показал мне, что программирование - это не только увлекательное занятие, но и мощный инструмент для решения сложных проблем. Этот опыт и страсть к программированию привели меня к решению сменить профессию и стремиться стать профессиональным разработчиком программного обеспечения.
-							Теперь я развиваюсь в направлении Java Backend Programmer. Кроме того, изучаю и другие языки программирования (примеры кода на моем репозитории GitHub).</p>
-					</div>
-					<div><a href="#skills" class="btn-box">Больше обо мне</a></div>
+						<p>
+							Коммерческая разработка на Java. Детализированное описание опыта будет актуализировано
+							в отдельном content-срезе.
+						</p>
+					</article>
 				</div>
 			</div>
 		</section>
-		<section data-menuanchor="skills-section" class="section" id="skills">
-			<div class="section-inner">
-				<h2 class="section-title">Ключевые навыки</h2>
-				<p class="section-lead">Сфокусирован на backend-разработке, качестве кода и надежной работе сервисов в продакшене.</p>
-				<div class="skills-grid">
-					<div class="skill-card">
-						<i class="fa-solid fa-code"></i>
-						<h3>Backend-разработка</h3>
-						<ul>
-							<li>Java 11/17, Spring Boot, Spring MVC</li>
-							<li>REST API, валидация, документация (OpenAPI)</li>
-							<li>Безопасность: JWT, Spring Security</li>
-						</ul>
+
+		<section class="section" id="technologies">
+			<div class="shell section-layout">
+				<div class="section-heading">
+					<p class="section-kicker">Стек</p>
+					<h2>Технологии</h2>
+				</div>
+				<div class="section-content technology-grid">
+					<div class="technology-group">
+						<h3>Backend</h3>
+						<p>Java 11/17 · Spring Boot · Spring MVC · REST API · OpenAPI · JWT · Spring Security</p>
 					</div>
-					<div class="skill-card">
-						<i class="fa-solid fa-database"></i>
+					<div class="technology-group">
 						<h3>Данные и интеграции</h3>
-						<ul>
-							<li>PostgreSQL, Redis, Flyway</li>
-							<li>Hibernate/JPA, оптимизация запросов</li>
-							<li>Интеграции через WebClient/RestTemplate</li>
-						</ul>
+						<p>PostgreSQL · Redis · Flyway · Hibernate/JPA · WebClient · RestTemplate</p>
 					</div>
-					<div class="skill-card">
-						<i class="fa-solid fa-screwdriver-wrench"></i>
-						<h3>Инструменты и DevOps</h3>
-						<ul>
-							<li>Docker, Docker Compose</li>
-							<li>CI/CD: GitHub Actions, GitLab CI</li>
-							<li>Мониторинг: Prometheus, Grafana</li>
-						</ul>
+					<div class="technology-group">
+						<h3>Инфраструктура</h3>
+						<p>Docker · Docker Compose · GitHub Actions · GitLab CI · Prometheus · Grafana</p>
 					</div>
-					<div class="skill-card">
-						<i class="fa-solid fa-bug"></i>
-						<h3>Качество и командная работа</h3>
-						<ul>
-							<li>JUnit 5, Mockito, Testcontainers</li>
-							<li>Code review, Clean Code, SOLID</li>
-							<li>Scrum, постановка задач, тайм-менеджмент</li>
-						</ul>
+					<div class="technology-group">
+						<h3>Качество</h3>
+						<p>JUnit 5 · Mockito · Testcontainers · Code Review · Clean Code · SOLID</p>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="section" id="portfolio">
-			<div class="section-inner">
-				<h2 class="section-title">Проекты и достижения</h2>
-				<p class="section-lead">Примеры работ, где я отвечал за архитектуру, качество и стабильность сервисов.</p>
-				<div class="projects-grid">
-					<article class="project-card">
-						<div class="project-icon">
-							<i class="fa-solid fa-diagram-project"></i>
-						</div>
-						<h3>Сервис мониторинга заявок</h3>
-						<p>Автоматизировал сбор и обработку данных, сократив ручную работу команды на 40%.</p>
-						<ul>
-							<li>Spring Boot, PostgreSQL, Redis</li>
-							<li>Очереди событий и планировщики</li>
-						</ul>
-					</article>
-					<article class="project-card">
-						<div class="project-icon">
-							<i class="fa-solid fa-chart-line"></i>
-						</div>
-						<h3>Витрина аналитики</h3>
-						<p>Создал API для отчетов и визуализаций, повысив скорость принятия решений менеджментом.</p>
-						<ul>
-							<li>REST API, OpenAPI</li>
-							<li>Оптимизация SQL-запросов</li>
-						</ul>
-					</article>
-					<article class="project-card">
-						<div class="project-icon">
-							<i class="fa-solid fa-shield-halved"></i>
-						</div>
-						<h3>Модуль авторизации</h3>
-						<p>Внедрил безопасную авторизацию и разграничение ролей для внутренних сервисов.</p>
-						<ul>
-							<li>JWT, Spring Security</li>
-							<li>Логирование и аудит действий</li>
-						</ul>
-					</article>
+
+		<section class="section" id="projects">
+			<div class="shell section-layout">
+				<div class="section-heading">
+					<p class="section-kicker">Практика</p>
+					<h2>Проекты</h2>
 				</div>
-				<div class="project-actions">
-					<a class="btn-box" href="https://github.com/dkopyshov" target="_blank" rel="noopener">Смотреть GitHub</a>
-					<a class="btn-box" href="assets/resources/DMITRY_KOPYSHOV_java_ru.pdf" download="assets/resources/DMITRY_KOPYSHOV_java_ru.pdf">Скачать резюме</a>
+				<div class="section-content">
+					<p class="muted">
+						Избранные реальные проекты будут добавлены после актуализации их описаний.
+					</p>
+					<a class="text-link"
+					   href="https://github.com/dkopyshov"
+					   target="_blank"
+					   rel="noopener">
+						Открыть GitHub →
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="education">
+			<div class="shell section-layout">
+				<div class="section-heading">
+					<p class="section-kicker">База</p>
+					<h2>Образование</h2>
+				</div>
+				<div class="section-content">
+					<article class="resume-entry">
+						<h3>Российская Академия Народного Хозяйства и Государственной Службы</h3>
+					</article>
 				</div>
 			</div>
 		</section>
 	</main>
 
-	<footer	id="contacts">
-		<div class="section-inner footer-grid">
+	<footer class="site-footer" id="contacts">
+		<div class="shell footer-content">
 			<div>
-				<h2 class="section-title">Контакты</h2>
-				<p class="section-lead">Открыт к предложениям и обсуждению новых проектов.</p>
+				<p class="section-kicker">Связаться</p>
+				<h2>Контакты</h2>
 			</div>
-			<div class="footer-contacts">
-				<a href="mailto:dmitry.kopyshov@gmail.com"><i class="fa-solid fa-envelope"></i> dmitry.kopyshov@gmail.com</a>
-				<a href="tel:+79991234567"><i class="fa-solid fa-phone"></i> +7&nbsp;(999)&nbsp;123-45-67</a>
-				<a href="https://t.me/ko_dmeet" target="_blank" rel="noopener"><i class="fa-brands fa-telegram"></i> Telegram</a>
-				<a href="https://linkedin.com/in/dmitrykopyshov" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+			<div class="contact-list">
+				<a href="mailto:dmitry.kopyshov@gmail.com">dmitry.kopyshov@gmail.com</a>
+				<a href="https://t.me/ko_dmeet" target="_blank" rel="noopener">Telegram</a>
+				<a href="https://linkedin.com/in/dmitrykopyshov" target="_blank" rel="noopener">LinkedIn</a>
+				<a href="https://github.com/dkopyshov" target="_blank" rel="noopener">GitHub</a>
 			</div>
 		</div>
 	</footer>
